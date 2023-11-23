@@ -1,0 +1,25 @@
+
+.container {
+
+    width: 70%; /* Set the container width to match the image width */
+    max-width: 50%; /* Ensure it doesn't exceed its original size */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto; /* Center the container horizontally */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    text-align: left; /* Center-align content */
+    /* margin-left: 50%; */
+    flex-wrap: wrap;
+    text-decoration: none;  }
+  
+  strong{
+    color: #332b2b;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }

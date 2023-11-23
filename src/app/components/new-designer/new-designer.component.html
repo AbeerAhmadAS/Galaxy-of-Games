@@ -1,0 +1,97 @@
+
+<div class="background">
+  <div class="header">
+    <img width="25" height="25" src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2"  [routerLink]="['/']"/>
+    <a [routerLink]="['/aboutUs/']" class="a"  >
+    <div class="about">
+        <h4>about us</h4>
+        </div>
+    </a>
+  </div> 
+  <div class="posted">
+
+    <h2>sign in</h2>
+    <form class="designerForm" (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+      <mat-form-field class="designerList">
+        <mat-label>Name:</mat-label><br />
+        <input
+          type="text"
+          matInput
+          placeholder="Write the Designer name"
+          formControlName="designerName"
+        />
+        <p class="error-msg" *ngIf="nameInput.invalid && nameInput.touched">
+          Name Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="designerList">
+        <mat-label>UserName:</mat-label><br />
+        <input
+          type="text"
+          matInput
+          placeholder="Write the Designer UserName"
+          formControlName="designerUsername"
+        />
+        <p class="error-msg" *ngIf="usernameInput.invalid && usernameInput.touched">
+          UserName Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="designerList">
+        <mat-label>Password:</mat-label><br />
+        <input
+          type="text"
+          matInput
+          placeholder="Write the Designer password"
+          formControlName="password"
+        />
+        <p class="error-msg" *ngIf="passwordInput.invalid && passwordInput.touched">
+          password Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="designerList">
+        <mat-label>Email:</mat-label><br />
+        <input
+          matInput
+          type="text"
+          placeholder="Write the your Email"
+          formControlName="designerEmail"
+        />
+        <p class="error-msg" *ngIf="emailInput.invalid && emailInput.touched">
+          Email Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="designerList">
+        <mat-label>Nationality:</mat-label><br />
+        <input
+          matInput
+          type="text"
+          placeholder="Write the your Nationality"
+          formControlName="designerNationality"
+        />
+        <p
+          class="error-msg"
+          *ngIf="nationalityInput.invalid && nationalityInput.touched"
+        >
+              Nationality Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="designerList">
+        <mat-label>About you</mat-label>
+        <textarea 
+        matInput
+        placeholder="talk about your self"
+        formControlName="aboutYou"
+        ></textarea>
+        <p class="error-msg" *ngIf="aboutYouInput.invalid && aboutYouInput.touched">
+            Write correctly!!
+        </p>
+      </mat-form-field>
+      <button type="submit" [disabled]="registerForm.invalid" mat-raised-button color="">
+        sign in      </button>
+    </form>
+  </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 GameNet. All rights reserved.</p>
+    <p><strong>in:</strong>Abeer Ahmad</p>
+  </footer>

@@ -1,0 +1,26 @@
+
+<section class="background-layers">
+
+  <div class="custom-container">
+    <div *ngFor="let gameItem of game" >  
+        <div class="container">
+          <ul >
+          <li><img [src]="gameItem.gameImage"></li>
+          <li><strong>GAME NAME:</strong>{{ gameItem.gameName }}</li>
+          <li><strong>GAME PRICE:</strong> {{ gameItem.gamePrice }}</li>
+          <li><strong>GAME TYPE:</strong> {{ gameItem.gameType }}</li>
+          <li><strong>DEVICE THE GAME IS RUNNING ON</strong>{{ gameItem.deviceGameRunningOn }}</li>
+          <li><strong>GAME DOWNLOAD LINK</strong>{{gameItem.gameLink}}</li>
+          <li><strong>DESCRIPTION OF THE GAME</strong>{{gameItem.description}}</li>
+          <button (click)="patch(gameItem.gameID)">add</button>
+          </ul>
+       
+      </div>
+     
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2023 GameNet. All rights reserved.</p>
+  <p><strong>in:</strong>Abeer Ahmad</p>
+</footer>

@@ -1,0 +1,102 @@
+
+
+<div class="background">
+  <div class="header">
+    <img src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2"  [routerLink]="['/']"/>
+   
+  </div> 
+  <!-- <img src="assets\img\Screenshot 2023-11-22 221314.png" alt="background" class="img"> -->
+<div class="posted">
+    <h2>Create a New Game</h2>
+    <form class="gameForm" (ngSubmit)="onSubmit()" [formGroup]="registerForm">
+      <mat-form-field class="gameList">
+        <mat-label>Name:</mat-label><br />
+        <input
+          type="text"
+          matInput
+          placeholder="Write the game name"
+          formControlName="gameName"
+        />
+        <p class="error-msg" *ngIf="nameInput.invalid && nameInput.touched">
+          Name Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="gameList">
+        <mat-label>Type Of Game:</mat-label><br />
+        <input
+          matInput
+          type="text"
+          placeholder="Write the type of game "
+          formControlName="gameType"
+        />
+        <p class="error-msg" *ngIf="typeInput.invalid && typeInput.touched">
+          Type Error
+        </p>
+      </mat-form-field>
+      <mat-form-field class="gameList">
+        <mat-label>Price:</mat-label><br />
+        <input
+          matInput
+          type="number"
+          placeholder="choose price of game"
+          formControlName="gamePrice"
+        />
+        <p
+          class="error-msg"
+          *ngIf="priceInput.invalid && priceInput.touched"
+        >
+              Price Error
+        </p>
+      </mat-form-field>
+      <mat-form-field >
+          <mat-label>Device</mat-label>
+              <select matNativeControl required formControlName="deviceGameRunningOn">
+                 <option value="Sony PlayStation">Sony PlayStation</option>
+                 <option value="Microsoft Xbox">Microsoft Xbox</option>
+                 <option value="Nintendo Switch">Nintendo Switch</option>
+                 <option value="PC">PC</option>
+                 <option value="Smartphones">Smartphones</option>
+                 <option value=" Virtual Reality (VR) Headsets"> Virtual Reality (VR) Headsets</option>
+                 </select>
+                 <p  class="error-msg" *ngIf="deviceGameRunningOnInput.invalid && deviceGameRunningOnInput.touched">
+                Device Error</p>
+          </mat-form-field>
+
+          <mat-form-field class="gameList">
+            <mat-label>Game Link:</mat-label><br />
+            <input
+              type="text"
+              matInput
+              placeholder="Write the game Link"
+              formControlName="gameLink"
+            />
+            <p class="error-msg" *ngIf="linkInput.invalid && linkInput.touched">
+              Link Error
+            </p>
+          </mat-form-field>
+
+          <mat-form-field class="gameList">
+            <mat-label>Description of the game:</mat-label><br />
+            <input
+              type="text"
+              matInput
+              placeholder="Write the game يescription"
+              formControlName="description"
+            />
+            <p class="error-msg" *ngIf="descreptionInput.invalid && descreptionInput.touched">
+              description Error
+            </p>
+          </mat-form-field>  
+
+
+      <button type="submit" [disabled]="registerForm.invalid" mat-raised-button color="">
+        create Game
+      </button>
+      
+    </form>
+  </div>
+</div>  
+<footer>
+  <p>&copy; 2023 GameNet. All rights reserved.</p>
+  <p><strong>in:</strong>Abeer Ahmad</p>
+</footer>

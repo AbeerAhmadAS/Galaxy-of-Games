@@ -1,0 +1,132 @@
+.header{
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;}
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+  }
+  .header img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .about {
+    display: flex;
+    font-weight: bold;
+    margin: 0 100px 200px ;
+    padding: 0px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    /* font-size: 20px; */
+  }
+  a:link {
+    color: rgb(8, 8, 8);
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  a:active {
+    color: rgb(159, 32, 32);
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
+.center-image {
+  text-align: center; /* Center-aligns the image */
+}
+.posted {
+  margin-top: 80vb;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto 100px;
+  padding: 45px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  font-weight: 500;
+
+}
+
+.posted button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+  border: 0px;
+  padding: 15px;
+  color: #080808;
+  font-size: 14px;
+}
+
+.error-msg {
+  color: #ff0000;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.gameForm {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.error-msg {
+  color: #ff0000;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.designerForm {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.designerList {
+  width: 100%;
+}
+mat-label {
+  padding-bottom: 100px;
+  color: #2d2c2c;
+}
+h2 {
+  color: #2d2c2c;
+}
+.background {
+  height: 150vh;
+  background-image: url("../../../assets/img/backgroung.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  position: relative;
+
+  margin-bottom: 0px;
+
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  /* margin-top: 10%; */
+}

@@ -1,0 +1,31 @@
+
+
+<!-- single-games.component.html -->
+<app-nav-bar></app-nav-bar>
+<section class="background-layers">
+  <div class="general">
+  <div class="custom-container">
+    <div *ngIf="playerList" class="center-image">
+      <img [src]="playerList.img" alt="Game Image"  width="1000px" height="1000px" class="img">
+    </div>
+
+    <div *ngIf="playerList" class="game-item">
+      <div class="details">
+        <ul>
+          <li><strong>PLAYER USERNAME</strong>{{playerList.playerUsername}}</li>
+          <li><strong>PLAYER NAME</strong>{{playerList.playerName}}</li>
+          <li><strong>PLAYER EMAIL:</strong> {{ playerList.playerEmail }}</li>
+          <li><strong>PLAYER AGE:</strong> {{ playerList.playerAge }}</li>
+          <li><strong>ABOUT PLAYER</strong>{{playerList.aboutYou}}</li>
+
+         
+        </ul>
+      
+      </div>
+    </div>
+  </div>
+  <a [routerLink]="['/player']">
+    <button>Back to projects</button>
+  </a>
+  </div>
+</section>

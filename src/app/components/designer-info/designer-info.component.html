@@ -1,0 +1,31 @@
+
+<app-nav-bar></app-nav-bar>
+<section class="background-layers">
+<div class="general"> 
+  <div *ngIf="designerList" class="center-image">
+    <img [src]="designerList.img" alt="Game Image"  width="500px"  class="img">
+  </div>
+
+    <div *ngIf="designerList" class="game-item">
+   
+      <div class="details">
+        <ul>
+         
+          <li><strong>id</strong> {{designerList.designerID}}</li>
+          <li><strong>Name :</strong>{{designerList.designerName}}</li>
+          <li><strong>Email : </strong> {{ designerList.designerEmail }}</li>
+         <li><strong>UserName : </strong>{{designerList.designerUsername}}</li>
+         <li><strong>Nationality : </strong>{{designerList.designerNationality}}</li>
+         <li><strong>About Designer</strong>{{designerList.aboutYou}}</li>
+
+        </ul>
+ 
+      </div>
+    </div>
+  </div> 
+</section>
+
+<footer>
+    <p>&copy; 2023 GameNet. All rights reserved.</p>
+    <p><strong>in:</strong>Abeer Ahmad</p>
+  </footer>

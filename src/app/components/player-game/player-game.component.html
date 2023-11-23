@@ -1,0 +1,51 @@
+<app-nav-bar></app-nav-bar>
+<div class="background">
+<div class="header">
+  <img
+    width="25"
+    height="25"
+    src="assets\img\icons8-videogame-64.png"
+    alt="coffee-beans---v2"
+    [routerLink]="['/']"
+  />
+  <div class="about">
+    <div  >
+     
+      
+      <a
+      *ngIf="gamePlayerList[0]"
+      [routerLink]="['/'+gamePlayerList[0]?.playerBy?.playerID + '/gamePlayer/'+gamePlayerList[0].gameID]"
+        class="a"
+        id="s2"
+      >
+        <h4>add new game</h4>
+      </a>
+
+    </div>
+  </div>
+</div>
+<section class="background-layers">
+
+  <div class="custom-container">
+   
+      <div *ngFor="let a of gamePlayerList" class="container">
+        <div class="details">
+          <ul >
+          <li><img [src]="a.gameImage"></li>
+          <li><strong>GAME NAME:</strong>{{ a.gameName }}</li>
+          <li><strong>GAME PRICE:</strong> {{ a.gamePrice }}</li>
+          <li><strong>GAME TYPE:</strong> {{ a.gameType }}</li>
+          <li><strong>DEVICE THE GAME IS RUNNING ON</strong>{{ a.deviceGameRunningOn }}</li>
+          <li><strong>GAME DOWNLOAD LINK</strong>{{a.gameLink}}</li>
+          <li><strong>DESCRIPTION OF THE GAME</strong>{{a.description}}</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+<footer>
+  <p>&copy; 2023 GameNet. All rights reserved.</p>
+  <p><strong>in:</strong>Abeer Ahmad</p>
+</footer>

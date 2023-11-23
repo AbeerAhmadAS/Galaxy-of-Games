@@ -1,0 +1,24 @@
+<app-nav-bar></app-nav-bar>
+<section class="background-layers">
+  <!-- Your background image -->
+  <!-- <img src="assets/img/background.png" alt="Background Image" class="background-image"> -->
+
+  <!-- <div class="custom-container">
+    <div *ngIf="playerList" class="center-image">
+      <img [src]="playerList.gameImage" alt="Game Image">
+    </div> -->
+
+    <div *ngIf="playerList" class="game-item">
+      
+      <h3>{{ playerList.playerName }}</h3>
+      <div class="details">
+        <ul>
+          <li><strong>EMAIL:</strong> {{ playerList.playerEmail }}</li>
+          <li><strong>AGE:</strong> {{ playerList.playerAge }}</li>
+         
+        </ul>
+ 
+      </div>
+    </div>
+  <!-- </div> -->
+</section>

@@ -1,0 +1,27 @@
+<!-- to desplay all player -->
+
+<div class="header">
+  <img width="25" height="25" src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2" [routerLink]="['/']"/>
+  <a [routerLink]="['/company/']" class="a"  >
+  <div class="about">
+      <h4>back</h4>
+      </div>
+  </a>
+</div> 
+  <section class="gallery">
+    <div class="picture" *ngFor="let playerItem of player">
+    
+    <a class="a" [routerLink]="['/player/id/' + playerItem.playerID]">
+        <div class="container">
+          <h3 class="image"><img [src]="playerItem.img"/></h3>
+          <h2>Name : {{ playerItem.playerName }}</h2>
+          <h3>Email: : {{ playerItem.playerEmail }}</h3>
+        </div>
+     
+    </a>
+    </div>
+</section>
+<footer>
+  <p>&copy; 2023 GameNet. All rights reserved.</p>
+  <p><strong>in:</strong>Abeer Ahmad</p>
+</footer>

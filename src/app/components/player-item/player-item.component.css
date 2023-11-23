@@ -1,0 +1,88 @@
+.header{
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  height: 70px;}
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+  }
+  .header img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .about {
+    display: flex;
+    font-weight: bold;
+    margin: 0 100px 200px ;
+    padding: 0px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    /* font-size: 20px; */
+  }
+  a:link {
+    color: rgb(8, 8, 8);
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  a:active {
+    color: rgb(159, 32, 32);
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
+.game-item {
+    margin-top: 30%;
+
+    width: 50%; /* Set the container width to match the image width */
+    max-width: 70%; /* Ensure it doesn't exceed its original size */
+    padding: 20px;
+    margin: 10px auto; /* Center the container horizontally */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Rest of your existing styles for .coffee-item and its children */
+  .general img {
+    margin-top: 30%;
+    max-width: 70%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below image */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 2px solid #ddd; /* Example: Adding a border */
+    border-radius: 5px;
+  }
+  .center-image{
+    width: 30%; /* Set the container width to match the image width */
+    max-width: 30%; /* Ensure it doesn't exceed its original size */
+    padding: 20px;
+    margin: 10px auto; /* Center the container horizontally */
+    
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }

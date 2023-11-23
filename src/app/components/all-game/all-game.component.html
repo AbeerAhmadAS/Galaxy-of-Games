@@ -1,0 +1,28 @@
+
+<div class="header">
+  <img width="25" height="25" src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2" [routerLink]="['/']"/>
+  <a [routerLink]="['/company/']" class="a"  >
+    <div class="about">
+        <h4>back</h4>
+        </div>
+    </a>
+</div> 
+<div class="general">
+  <!-- <div class="sec"> -->
+  <a [routerLink]="['/games/id/'+ gameItem.gameID]" class="a"  *ngFor="let gameItem of game" >
+  <div class="card custom-card" >
+
+      <img [src]="gameItem.gameImage" class="card-img-top" alt="">
+      <div class="card-body">
+          <h3 class="card-title">{{ gameItem.gameName }}</h3>
+          
+      </div>
+  </div>
+  
+</a>
+</div>
+<!-- </div> -->
+<footer>
+  <p>&copy; 2023 GameNet. All rights reserved.</p>
+  <p><strong>in:</strong>Abeer Ahmad</p>
+</footer>

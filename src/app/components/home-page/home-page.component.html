@@ -1,0 +1,57 @@
+<app-nav-bar></app-nav-bar>
+<!-- <h1>Welcome {{ name }}</h1> -->
+<div class="header">
+  <img width="25" height="25" src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2"/>
+  <a [routerLink]="['/aboutUs/']" class="a"  >
+  <div class="about">
+      <h4>about us</h4>
+      </div>
+  </a>
+</div> 
+<div class="home">
+    <div class="banner">
+     
+    <img  class="home-IMG" src="assets\img\storyline-games-and-vr.gif" alt="home page image"  width="5100" height="700">
+    <h1 class="home-text" >Galaxy <br>   Of <br>Games</h1>
+    <div class="thick-arrow-down" (click)="scrollToTarget()"></div>
+    </div>
+    
+    <div class="card-container" id="cards">
+    
+        <div class="card" style="width: 18rem;" routerLink="/login/designer/">
+          <div class="card-body">
+            <div>
+              <img class="card-img-top" src="assets\img\bonbon-making-a-video-call-on-laptop.png" alt="designer">
+              <h5 class="card-title">Designers</h5>
+     
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;" routerLink="/login/company/">
+          <div class="card-body">
+            <div>
+              <img class="card-img-top" src="assets\img\techny-game-development-and-programming-code-on-laptop.png" alt="company">
+              <h5 class="card-title">Company</h5>
+      
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;" routerLink="/login/player/">
+          <div class="card-body" >
+            <div>
+              <img class="card-img-top" src="assets\img\bonbon-teenage-hobbies-for-computer-games.png" alt="player">
+              <h5 class="card-title">Player</h5>
+    
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    
+    </div>
+    
+    
+    

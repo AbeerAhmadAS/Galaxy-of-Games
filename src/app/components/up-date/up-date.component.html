@@ -1,0 +1,92 @@
+<!-- single-games.component.html -->
+<app-nav-bar></app-nav-bar>
+<div class="header">
+  <img src="assets\img\icons8-videogame-64.png" alt="coffee-beans---v2"  [routerLink]="['/']"/>
+  
+  
+</div>
+<section class="background-layers">
+  <!-- Your background image -->
+  <!-- <img src="assets/img/background.png" alt="Background Image" class="background-image"> -->
+
+  <!-- <div class="custom-container">
+    <div *ngIf="gameList" class="center-image">
+
+    </div> -->
+    <div  *ngIf=" gamelist">
+   
+    </div>
+    <form class="designerForm" (ngSubmit)="updateProject()" [formGroup]="updateProjectForm">
+      <!-- <h3>{{ gameList.deviceGameRunningOn }}</h3> -->
+      <h1>EDIT THE GAME</h1>
+      <div class="details">
+        <ul>
+         <mat-form-field class="gameList">
+            <mat-label>Type Of Game:</mat-label><br />
+            <input
+              matInput
+              type="text"
+              placeholder="Write the type of game "
+              formControlName="gameType"
+            />
+            <p class="error-msg" *ngIf="typeInput.invalid && typeInput.touched">
+              Type Error
+            </p>
+          </mat-form-field>
+          <mat-form-field class="gameList">
+            <mat-label>Price:</mat-label><br />
+            <input
+              matInput
+              type="number"
+              placeholder="choose price of game"
+              formControlName="gamePrice"
+            />
+            <p
+              class="error-msg"
+              *ngIf="priceInput.invalid && priceInput.touched"
+            >
+                  Price Error
+            </p>
+          </mat-form-field>
+          
+    
+              <mat-form-field class="gameList">
+                <mat-label>Game Link:</mat-label><br />
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Write the game Link"
+                  formControlName="gameLink"
+                />
+                <p class="error-msg" *ngIf="linkInput.invalid && linkInput.touched">
+                  Link Error
+                </p>
+              </mat-form-field>
+    
+              <mat-form-field class="gameList">
+                <mat-label>Description of the game:</mat-label><br />
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Write the game يescription"
+                  formControlName="description"
+                />
+                <p class="error-msg" *ngIf="descreptionInput.invalid && descreptionInput.touched">
+                  description Error
+                </p>
+              </mat-form-field>  
+        </ul>
+     
+      </div>
+      <div class="end">
+      <button type="submit" [disabled]="updateProjectForm.invalid" mat-raised-button color=""  [routerLink]="['/games/designerUsername/'+this.gamelist.designBy.designerUsername]">
+        save
+      </button>
+      <button [routerLink]="['/games/designerUsername/'+this.gamelist.designBy.designerUsername]" mat-raised-button color="">cancel</button>
+    </div>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 GameNet. All rights reserved.</p>
+    <p><strong>in:</strong>Abeer Ahmad</p>
+  </footer>
