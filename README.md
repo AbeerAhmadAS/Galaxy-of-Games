@@ -37,25 +37,26 @@ Galaxy Games strives to create a thriving ecosystem that benefits designers, pla
    - Users can create profiles.
    - Individual user pages are available, showcasing detailed user information.
 
-2. Community Interaction:
-   - Users can interact with the gaming community.
-
-3. Authentication:
+2. Authentication:
    - The application includes a sign-in/login component for user authentication.
 
-4. Navigation:
+3. Navigation:
    - Navbar/Header component enhances navigation.
   
      
-5. Publish Games: Designers can upload and publish their games seamlessly, complete with detailed information and multimedia assets.
+4. Publish Games:
+   -Designers can upload and publish their games seamlessly, complete with detailed information and multimedia assets.
 
    
-6. Company management: Companies can create profiles and supervise game development.
+5. Company management:
+   - Companies can create profiles and supervise game development.
 
-7. Game Library: Players have access to a wide range of games spanning different genres, platforms, and themes.
+6. Game Library:
+   - Players have access to a wide range of games spanning different genres, platforms, and themes.
 
 
-8. Support and Updates: Designers can provide updates and patches for their games, ensuring a smooth gaming experience for players.
+7. Support and Updates:
+   - Designers can provide updates and patches for their games, ensuring a smooth gaming experience for players.
 
 
 
