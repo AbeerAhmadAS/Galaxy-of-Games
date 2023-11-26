@@ -69,24 +69,24 @@ The project is structured into several components, each serving a specific purpo
   - Serves as the focal point for the application's home page.
 
 - designer Component :
- - This page displays the games he designed, with the ability to modify and delete them
- - Through this page, the designer can move to another page to add games.
+   - This page displays the games he designed, with the ability to modify and delete them
+   - Through this page, the designer can move to another page to add games.
 
 - player Component :
-   - This page displays to the player all the games that he has added to his favorite game list.
-   - Through this page, the player can move to another page to explore more games.
+    - This page displays to the player all the games that he has added to his favorite game list.
+    - Through this page, the player can move to another page to explore more games.
 - company Component :
-     -  This page displays the components of the player and games designer:
-           - Designer: Displays a list of all designers and all the details about them
-           - Players: Displays a list of all players and all the details about them
-           - Games: Displays a list of all games and all the details about them.
+      -  This page displays the components of the player and games designer:
+             - Designer: Displays a list of all designers and all the details about them
+             - Players: Displays a list of all players and all the details about them
+             - Games: Displays a list of all games and all the details about them.
 
 - create new account:
-   - All three different users can create new accounts.
+     - All three different users can create new accounts.
  
      
 - Sign-In/[Login] Component (sign-in.component):
-  - Offers a simple and intuitive log-in form for user authentication.
+    - Offers a simple and intuitive log-in form for user authentication.
 
 ### Additional Components:
 
