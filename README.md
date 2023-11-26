@@ -103,7 +103,6 @@ The project is structured into several components, each serving a specific purpo
 - about us:
     - To give the user some information about our website
 
-1. Clone the repository:
 
 
 ## Configuration
