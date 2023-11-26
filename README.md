@@ -128,4 +128,4 @@ For inquiries and support, please contact [ِAbeer Ahmad] at [abeerahmadasiri@gm
 ##  Installation
    
 bash
-   git clone https://github.com/AbeerAhmadAS
+   git clone [https://github.com/AbeerAhmadAS](https://github.com/AbeerAhmadAS/Galaxy-of-Games.git)https://github.com/AbeerAhmadAS/Galaxy-of-Games.git
