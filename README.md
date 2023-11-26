@@ -1,188 +1,35 @@
 
-# Video Game System
+# GALAXY OF GAMES
 [Presentation](https://docs.google.com/presentation/d/1WFH-f5g4sDzrNarR49ZVdJQ5dc5_Iof44dC7xLShhys/edit?usp=sharing)
 [back end](https://github.com/AbeerAhmadAS/VideoGame.git)
-![Java](https://img.shields.io/badge/Java-11-green)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5-blue)
 
-This repository contains Video Game System project built with Java and Spring Boot. The project is designed to manage and organize information about video games, including details about designer, game and player. It also allows  different users to interact with each other.
-
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Code Structure](#code-structure)  <!-- Corrected anchor link -->
-- [Usage](#usage)
-- [UML](#uml)  <!-- Corrected anchor link -->
-- [Configuration](#configuration)
-- [Contact](#contact)
-- [Resources](#resources)
-
-
-## Overview
-
-This video game System project is built using Java and Spring Boot, and it provides a RESTful API for managing video game system information. It allows adding, modifying, and deleting a designer. It also allows games with the ability to link them to their own designer. It can also create multiple players with the ability to link them to several games.
-## Features
-- Designers: The user can add a new designer by entering all his data, and he can also modify it and delete this designer.
-
-- Game: The user can enter a new game, adding all its data, linking it to a designer, and he can also delete it.
-
-- Player: The user can enter a new player and also enter all his data with the ability to link him to the games he prefers.
-
-## Getting Started
-
-To get started with this project, you will need to have Java and Spring Boot set up on your local development environment. You can follow these steps:
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/yourusername/your-VideoGame.git](https://github.com/AbeerAhmadAS/VideoGame.git)https://github.com/AbeerAhmadAS/VideoGame.git
-   cd your-Video-Game
-
-## Code Structure
-
-### Controllers:
-
-- DesignerController.java: Manages endpoints related to designer operations.
-- GameController.java: Manages endpoints related to game operations
-- PlayerController.java: Handles Player-related endpoints.
-  
-### Model:
-
-- Designer.java: Represents the designer entity with attributes like id, name, email, and nationality.
-- game.java: Represents the game entity with attributes like id, name, type, and device Game Running On.
-- player.java: Represents the player entity with attributes like id, name, email, and age.
-
-### Repository:
-
-- DesignerRepository.java: Provides data access methods for the Designer entity.
-- GameRepository.java: Provides data access methods for the Game entity.
-- PlayerRepository.java: Provides data access methods for the Player entity.
-
-### Service:
-
-- DesignerService.java: Contains business logic for designer-related operations.
-- GameService.java: Implements business logic for game-related operations.
-- PlayerService.java: Implements business logic for Player-related operations.
-
-### Resources:
-
-- application.properties: Configuration file for setting up the database and other properties.
-
-  
-### Tests:
-
-- Unit test classes for controllers, repositories.
-  
-### Other Project Files:
-
-
-- pom.xml: Maven configuration file for project dependencies and build settings.
-- Other project-specific files and directories as needed.
-
-## Usage
-
-To use this project, you can interact with the API endpoints through tools like Postman or by creating your own front-end application. Here are some sample API endpoints:
-
-GET /designer: Retrieve a list of all designers.
-
-GET /designer/{designerId}: Retrieve a specific designer by its ID.s.
-
-GET /designer/designerName/{designerName}: Retrieve a specific designer by its name.
-
-PUT/designer/{designerId} :Update an existing designer.
-
-PATCH/designer/designerName/{designerId} :Update name of designer.
-
-DELETE/designer/{designerId} : Delete designer.
-
-POST/designer: Add new designer.
-
-GET /games: Retrieve a list of all games.
-
-GET /games/id/{gameId}: Retrieve a specific game by its ID.s.
-
-GET /game/{deviceGameRunningOn}: Retrieve a specific game by  name of device that running the game.
-
-GET /games/designerName/{designerName}: Retrieve a specific game by  name of designer of the game.
-
-PUT/games/{gameID} :Update an existing game.
-
-PATCH/games/gamePrice/{gameID} :Update price of game.
-
-DELETE/games/{gameID} : Delete game .
-
-POST/games: Add new game.
-
-GET /player: Retrieve a list of all players.
-
-GET /player/id/{playerID}: Retrieve a specific player by its ID.s.
-
-GET /player/gameName/{gameName}: Retrieve a specific player by  name of game.
-
-PUT/player/{playerID} :Update an existing player.
-
-PATCH/player/playerAge/{playerID} :Update Age of player.
-
-DELETE/player/{playerID} : Delete player .
-
-POST/player: Add new player.
-
-
-
-## UML
-
-| Database                                              | Class      
-|-------------------------------------------------------|--------------------------------------------------------------------------------------
-| <img width="355" alt="image" src="https://github.com/AbeerAhmadAS/VideoGame/assets/141168203/b366be53-1189-4ef4-85c6-449d7adb6879"> |<img width="355" alt="image" src="https://github.com/AbeerAhmadAS/VideoGame/assets/141168203/db8696ec-1e2c-431a-9646-c03e11b21cf0">
-
-
-
-
-
-
-
-
-## Configuration
-The project uses a PostgreSQL database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
-
-## Resources
-[online visual paradigm](https://online.visual-paradigm.com/)
-[Google Slides](https://www.google.com/slides/about/)
-[slidesgo](https://slidesgo.com/)
-
-
-
-[ChatGPT](https://chat.openai.com/)
-
-
-## Contact
-For any questions or inquiries related to this project, you can contact the project maintainer:
-
-GitHub: [AbeerAhmadAS](https://github.com/AbeerAhmadAS)
-
-
-
-
-
-
-
-
-
-///////////////////////////
 - [Overview](#overview)
 - [Features](#features)
 - [Code Structure-Components](#code-structure-components)
 - [Configuration](#configuration)
-- [UML](#uml)
 - [Contact](#contact)
 - [Resources](#resources)
 - [Installation](#installation)
 
 ## Overview:
 
-Welcome to the VAI Game Library Code Project! This Angular application is designed to manage and organize video game information. Users can create profiles, explore and manage their game collections, and interact with the gaming community.
+Welcome to the Galaxy Of Game Project! This is a Angular application that meets the needs of designers, players and companies alike. Galaxy game  provides a comprehensive platform for game designers to publish their creations, for companies to manage games developed under their supervision, and for gamers to access an extensive library of games.
 
+
+### For designers:
+Games Galaxy offers an easy-to-use interface for designers to showcase and publish their games. Whether you're an independent developer or part of a larger studio, you can easily upload your games to GameNet, providing detailed descriptions. Designers have complete control over the presentation of their games.
+
+
+### For companies:
+Galaxy of Games acts as a central hub for companies to manage their gaming portfolios. Businesses can create profiles, set up their branding, and organize their games for easy access and distribution. They can collaborate with designers, oversee the development process, and provide support for their titles.
+
+### For players:
+The gaming galaxy provides a wide and diverse range of games that players can explore and enjoy. With a simple search and filtering system, players can easily discover new games across different genres, platforms, and topics. From indie games to AAA titles, Galaxy of Games offers something for every gaming enthusiast.
+
+
+
+
+Galaxy Games strives to create a thriving ecosystem that benefits designers, players, and businesses alike, fostering creativity, collaboration, and enjoyment in the world of electronic games.
 
 ### Features:
 
@@ -190,23 +37,26 @@ Welcome to the VAI Game Library Code Project! This Angular application is design
    - Users can create profiles.
    - Individual user pages are available, showcasing detailed user information.
 
-2. Game Management:
-   - Users can explore and manage their game collections.
-   - A comprehensive list of available games is displayed.
-   - Users can add new games to their profiles.
-
-3. Community Interaction:
+2. Community Interaction:
    - Users can interact with the gaming community.
 
-4. Authentication:
+3. Authentication:
    - The application includes a sign-in/login component for user authentication.
 
-5. Navigation:
+4. Navigation:
    - Navbar/Header component enhances navigation.
+  
+     
+5. Publish Games: Designers can upload and publish their games seamlessly, complete with detailed information and multimedia assets.
 
-6. Pagination and Search:
-   - Games component offers pagination features for large lists.
-   - Search functionality is available for user convenience.
+   
+6. Company management: Companies can create profiles and supervise game development.
+
+7. Game Library: Players have access to a wide range of games spanning different genres, platforms, and themes.
+
+
+8. Support and Updates: Designers can provide updates and patches for their games, ensuring a smooth gaming experience for players.
+
 
 
 🏗️
@@ -214,38 +64,40 @@ Welcome to the VAI Game Library Code Project! This Angular application is design
 
 The project is structured into several components, each serving a specific purpose:
 
-- Home Component (home.component):
+- Home Component :
   - Serves as the focal point for the application's home page.
 
-- Games Component (games.component):
-  - Displays a comprehensive list of available games.
-  - Offers search and pagination features for user convenience.
+- designer Component :
+ - This page displays the games he designed, with the ability to modify and delete them
+ - Through this page, the designer can move to another page to add games.
 
-- Profile Component (profile.component):
- - Highlights individual user pages, providing a detailed view of user information.
-  - Showcases user profiles and empowers users to manage their game collections effortlessly.
+- player Component :
+   - This page displays to the player all the games that he has added to his favorite game list.
+   - Through this page, the player can move to another page to explore more games.
+- company Component :
+     -  This page displays the components of the player and games designer:
+           - Designer: Displays a list of all designers and all the details about them
+           - Players: Displays a list of all players and all the details about them
+           - Games: Displays a list of all games and all the details about them.
 
-- Single Games Component (single-games.component):
-  - Presents in-depth information about a specific game.
-
-- New User Component (new-user.component):
-  - Facilitates user registration, allowing the creation of new accounts.
-
-- Add Game Component (add-game.component):
-  - Provides a streamlined form for users to add games to their profiles.
-
+- create new account:
+   - All three different users can create new accounts.
+ 
+     
 - Sign-In/[Login] Component (sign-in.component):
   - Offers a simple and intuitive log-in form for user authentication.
 
 ### Additional Components:
 
-- Navbar/Header Component (navbar.component):
+- Navbar/Header Component :
   - Enhances navigation with a user-friendly bar for quick access to different sections.
 
-- Footer Component (footer.component):
+- Footer Component :
   - Concludes the application with an informative footer section.
-
-
+ 
+    
+- about us:
+    - To give the user some information about our website
 
 1. Clone the repository:
 
@@ -254,24 +106,22 @@ The project is structured into several components, each serving a specific purpo
 
 The project uses a database, and you may need to configure the database connection details in the application.properties file. Additionally, the project includes validation constraints and error messages for input data, which you can customize if needed.
 
-## UML
-
- <img src = "https://github.com/HUDAAYOUB/Finall-Project-VaiGameLibrary-Fontend-with-IRONHACK/blob/main/Screenshot%202023-11-22%20095423.png" >
 
  
 ## Contact
 
-For inquiries and support, please contact [Huda Ayoub] at [huda3ya@gmail.com].
+For inquiries and support, please contact [ِAbeer Ahmad] at [abeerahmadasiri@gmail.com].
 
 ## Resources
 
 - [Wikipedia](https://en.wikipedia.org/)
 - [Code Java](https://www.codejava.net/)
 - [Java T Point](https://www.javatpoint.com/)
-- [Canva](https://www.canva.com/)
+- [Google Slides](https://www.google.com/slides/about/)
+- [slidesgo](https://slidesgo.com/)
 - [ChatGPT](https://www.openai.com/)
 
 ##  Installation
    
 bash
-   git clone https://github.com/
+   git clone https://github.com/AbeerAhmadAS
