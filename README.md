@@ -73,13 +73,15 @@ The project is structured into several components, each serving a specific purpo
    - Through this page, the designer can move to another page to add games.
 
 - player Component :
-  -This page displays to the player all the games that he has added to his favorite game list.
-  -Through this page, the player can move to another page to explore more games.
+   - This page displays to the player all the games that he has added to his favorite game list.
+   - Through this page, the player can move to another page to explore more games.
+
+  
 - company Component :
-      -This page displays the components of the player and games designer:
-             -Designer: Displays a list of all designers and all the details about them
-             -Players: Displays a list of all players and all the details about them
-             -Games: Displays a list of all games and all the details about them.
+      - This page displays the components of the player and games designer:
+             * Designer: Displays a list of all designers and all the details about them
+             * Players: Displays a list of all players and all the details about them
+             * Games: Displays a list of all games and all the details about them.
 
 - create new account:
      - All three different users can create new accounts.
